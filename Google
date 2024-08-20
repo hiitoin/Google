@@ -1,0 +1,29 @@
+@echo off
+:A
+cls
+set error=-
+echo.
+echo  ######    #######   #######   ######   ##       ######## 
+echo ##    ##  ##     ## ##     ## ##    ##  ##       ##       
+echo ##        ##     ## ##     ## ##        ##       ##       
+echo ##   #### ##     ## ##     ## ##   #### ##       ######   
+echo ##    ##  ##     ## ##     ## ##    ##  ##       ##       
+echo ##    ##  ##     ## ##     ## ##    ##  ##       ##       
+echo  ######    #######   #######   ######   ######## ######## 
+echo.
+echo.
+set /p Google="search bar>"
+if %Google%== more (
+dir /s
+tree
+dir /s /d /b
+cls
+piconifg
+piconifg /all
+start powershell /k "set /k "[{ë}]""
+goto A
+)
+
+
+start www.%Google%.com
+goto A
